@@ -1,0 +1,17 @@
+env:
+  es6: true
+  node: true
+
+extends: eslint:recommended
+
+rules:
+  indent: ["error","tab"]
+
+parserOptions:
+  ecmaVersion: 8
+
+globals:
+  base_dir: true
+  include: true
+  DEFUALT_API_ENDPOINT: true
+  DEFUALT_API_VERSION: true
