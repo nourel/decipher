@@ -1,7 +1,6 @@
 # decipher
 
-A simple async client for the Decipher API
-https://release.decipherinc.com/s/local/api.html
+A simple async client for the [Decipher API](https://release.decipherinc.com/s/local/api.html)
 
 ## Installation
 
@@ -39,16 +38,15 @@ decipher.get().surveyData('12/123',{format:'json',fields:'email,ipAddress',cond:
 decipher.get().users()
 ```
 
-[companies]https://release.decipherinc.com/s/local/api.html#research-hub-company-management-get()
+[companies](https://release.decipherinc.com/s/local/api.html#research-hub-company-management-get)()
 ```
 decipher.get().companies()
 ```
 
 ### POST
 
-bounced(params *__required__*)
+[bounced](https://release.decipherinc.com/s/local/api.html#sample-management-bounce-backs-post)(params *__required__*)
 -can pass in as an array of emails ['email1,email2'] or object {emails:['email1,email2']}
-https://release.decipherinc.com/s/local/api.html#sample-management-bounce-backs-post
 ```
 decipher.post().bounced({emails:['email1,email2']})
 ```
