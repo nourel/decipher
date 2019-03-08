@@ -60,8 +60,16 @@ module.exports = (options) => {
 		return res
 	}
 
+	/*Staff access required*/
 	async function companies () {
 		const uri = API_PATH + '/rh/companies'
+
+		const res = await request.get({uri:uri, headers:headers})
+		return res
+	}
+
+	async function companySurveys (company = 'all') {
+		const uri = API_PATH + '/rh/companies/' + company + '/surveys'
 
 		const res = await request.get({uri:uri, headers:headers})
 		return res
@@ -70,6 +78,7 @@ module.exports = (options) => {
 	return {
 		surveyData: surveyData,
 		users: users,
-		companies: companies
+		companies: companies,
+		companySurveys: companySurveys
 	}
 }

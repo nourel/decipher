@@ -43,6 +43,11 @@ decipher.get().users()
 decipher.get().companies()
 ```
 
+[companySurveys](https://release.decipherinc.com/s/local/api.html#research-hub-survey-list-get)(companyID *__optional Defaults to 'all'__*)
+```
+decipher.get().companySurveys()
+```
+
 ### POST
 
 [bounced](https://release.decipherinc.com/s/local/api.html#sample-management-bounce-backs-post)(params *__required__*)
